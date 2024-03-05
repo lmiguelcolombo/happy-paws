@@ -4,6 +4,7 @@ import * as SplashScreen from 'expo-splash-screen';
 import PetsHome from '../components/PetsHome';
 import Qct from '../components/QCT';
 import AboutUs from '../components/AboutUs';
+import ServicesList from '../components/ServicesList';
 import Footer from '../components/Footer';
 import Gallery from '../components/Gallery';
 
@@ -16,6 +17,7 @@ export default function Page() {
         <Qct />
         <AboutUs />
         <Gallery />
+        <ServicesList />
         <Footer />
       </ScrollView>
     </SafeAreaProvider>
