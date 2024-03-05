@@ -6,6 +6,7 @@ import Qct from '../components/QCT';
 import AboutUs from '../components/AboutUs';
 import ServicesList from '../components/ServicesList';
 import Footer from '../components/Footer';
+import Gallery from '../components/Gallery';
 
 SplashScreen.preventAutoHideAsync();
 export default function Page() {
@@ -15,6 +16,7 @@ export default function Page() {
         <PetsHome />
         <Qct />
         <AboutUs />
+        <Gallery />
         <ServicesList />
         <Footer />
       </ScrollView>
