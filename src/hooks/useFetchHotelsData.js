@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 export const useFetchHotelsData = () => {
-  const [hotelsData, setHotelsData] = useState(null);
+  const [hotelsData, setHotelsData] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -19,7 +19,7 @@ export const useFetchHotelsData = () => {
         setLoading(false);
       })
       .catch((error) => {
-        setError(error.message);
+        setError(error);
         setLoading(false);
       });
   }, []);
